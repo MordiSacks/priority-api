@@ -1,5 +1,17 @@
 {
   "name": "mordisacks/priority-api2",
+  "description": "A PHP client for priority software API",
+  "keywords": [
+    "priority",
+    "priority software",
+    "api"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MordiSacks/priority-api",
+  "support": {
+    "issues": "https://github.com/MordiSacks/priority-api/issues",
+    "source": "https://github.com/MordiSacks/priority-api"
+  },
   "authors": [
     {
       "name": "Mordi Sacks"

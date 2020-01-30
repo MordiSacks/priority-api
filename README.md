@@ -46,6 +46,25 @@ $query->get();
 $query->from('ORDERS')->find('AA123456');
 ```
 
+#### Filter Group 
+```php
+$query->filter(function (Filter $filter) {
+            $filter->filter('B', 'something');
+            $filter->filter('C', 'something');
+         });
+```
+
+#### Expand sub query
+```php
+$query->expand('ITEMS', function (Builder $q) {
+      $q->select('FIELD1', 'FIELD2', 'FIELD3')
+        ->filter('FIELD1', 'Y')
+        ->filter(function (Filter $filter) {
+            $filter->filter('FIELD2', 'Y')
+                   ->orFilter('FIELD3', 'Y');
+        });
+  });
+```
 --------------
 
 Inspired by Laravel Eloquant builder

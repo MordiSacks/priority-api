@@ -1,7 +1,10 @@
 # priority-api
 A PHP client for priority software API
 based on this documentation  
-https://prioritysoftware.github.io/restapi/
+https://prioritysoftware.github.io/restapi/  
+
+### Instellation  
+`composer require mordisacks/priority-api`
 
 ### Usage
 

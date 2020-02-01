@@ -66,7 +66,6 @@ class Builder
     public function find($id)
     {
         $this->find = Filter::wrapValue($id);
-        dump($this->toQuery());
         return $this->get();
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PriorityApi;
+namespace PriorityApi\Exceptions;
 
 
 class EntityNotSetException extends \Exception
